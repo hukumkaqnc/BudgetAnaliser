@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace BudgetApp
 {
     internal class DB
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=spendings");
+        MySqlConnector.MySqlConnection connection = new MySqlConnector.MySqlConnection("server=localhost;port=3306;username=root;password=root;database=spendings");
         public void openConnection()
         {
             if(connection.State == System.Data.ConnectionState.Closed)
@@ -24,7 +25,7 @@ namespace BudgetApp
                 connection.Close();
             }
         }
-        public MySqlConnection getConnection()
+        public MySqlConnector.MySqlConnection getConnection()
         {
             return connection;  
         }
