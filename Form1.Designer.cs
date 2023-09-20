@@ -35,9 +35,10 @@
             // 
             // logbuttom
             // 
-            this.logbuttom.Location = new System.Drawing.Point(366, 53);
+            this.logbuttom.Location = new System.Drawing.Point(488, 65);
+            this.logbuttom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logbuttom.Name = "logbuttom";
-            this.logbuttom.Size = new System.Drawing.Size(75, 23);
+            this.logbuttom.Size = new System.Drawing.Size(100, 28);
             this.logbuttom.TabIndex = 0;
             this.logbuttom.Text = "Log In";
             this.logbuttom.UseVisualStyleBackColor = true;
@@ -45,28 +46,32 @@
             // 
             // loginfield
             // 
-            this.loginfield.Location = new System.Drawing.Point(214, 56);
+            this.loginfield.Location = new System.Drawing.Point(285, 69);
+            this.loginfield.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginfield.Name = "loginfield";
-            this.loginfield.Size = new System.Drawing.Size(100, 20);
+            this.loginfield.Size = new System.Drawing.Size(132, 22);
             this.loginfield.TabIndex = 1;
             // 
             // passfield
             // 
-            this.passfield.Location = new System.Drawing.Point(214, 83);
+            this.passfield.Location = new System.Drawing.Point(285, 102);
+            this.passfield.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passfield.Name = "passfield";
-            this.passfield.Size = new System.Drawing.Size(100, 20);
+            this.passfield.Size = new System.Drawing.Size(132, 22);
             this.passfield.TabIndex = 2;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.passfield);
             this.Controls.Add(this.loginfield);
             this.Controls.Add(this.logbuttom);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
