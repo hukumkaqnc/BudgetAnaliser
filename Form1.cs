@@ -20,7 +20,7 @@ namespace BudgetApp
 
         private void logbuttom_Click(object sender, EventArgs e)
         {
-            string loogin = loginfield.Text;
+            string log = loginfield.Text;
             string password = passfield.Text;
             DB db = new DB();
             DataTable table = new DataTable();
@@ -28,7 +28,7 @@ namespace BudgetApp
 
 
             MySqlCommand command = new MySqlCommand("SELECT * FROM `costs` WHERE 'login' = @ul AND 'password' = @up", db.getConnection());
-            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = loogin;
+            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = log;
             command.Parameters.Add("@up", MySqlDbType.VarChar).Value=password;
             adapter.SelectCommand = command;
             adapter.Fill(table);
