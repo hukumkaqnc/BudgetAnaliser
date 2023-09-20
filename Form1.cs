@@ -20,7 +20,7 @@ namespace BudgetApp
 
         private void logbuttom_Click(object sender, EventArgs e)
         {
-            string loogin = loginfield.Text;
+            string Logiiiiin = loginfield.Text;
             string password = passfield.Text;
             DB db = new DB();
             DataTable table = new DataTable();
@@ -41,6 +41,11 @@ namespace BudgetApp
             {
                 MessageBox.Show("No");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
